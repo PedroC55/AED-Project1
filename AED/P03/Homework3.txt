@@ -1,0 +1,67 @@
+para n= 3
+[1 2 3 4 5 6]
+
+A= 1 2 3 -> calcular o conj compl. B -> calcualr Mn de A e B
+   1 2 4 
+   1 2 5
+   1 2 6
+   1 3 4
+   1 3 5
+   1 3 6
+   1 4 5
+   1 4 6
+   1 5 6
+   2 3 4
+   2 3 5
+   2 3 6
+   2 
+  ---
+   4 5 6
+
+
+Temos A um conjunto com n elementos entre 1 e 2n
+      B " " 1 e 2n
+
+//valor maximo de ai-bj > -2n (o valor minimo de k)
+//o valor maxumo de ai-bj < 2n
+//Logo k pertence a [-2n, ..., 2n]
+
+//calculo de Mn
+
+//criar array histograma de cada valor de k
+int histograma[4n+1]; inicializado com 0's
+
+//calcular todas as diferenças ai-bj
+for (i..)
+ for(j...)
+    k = a[i] - b[j];
+    histograma[k+2n]++;
+
+Mn = maximo(histograma)
+
+
+
+
+
+
+int An[n]
+//inicializar array A
+for(i de 1 a n)
+A[i] = i;
+
+do{
+//incrementa A
+
+//determinar a primeira posiçao que A que é incrementavel
+ord = n-1;
+while(A[ord] == maximo)
+{
+    ord--
+    maximo--
+}
+
+A[ord]++;
+for(i 0 ord+1; i<n-1;i++)
+A[i] = A[i+1] +1;
+
+}while
